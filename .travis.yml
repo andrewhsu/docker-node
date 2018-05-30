@@ -109,6 +109,11 @@ jobs:
 
     - stage: Build
       env:
+        - NODE_VERSION: "10"
+        - VARIANT: "core"
+
+    - stage: Build
+      env:
         - NODE_VERSION: "6"
         - VARIANT: "jessie"
 
@@ -134,6 +139,11 @@ jobs:
 
     - stage: Build
       env:
+        - NODE_VERSION: "6"
+        - VARIANT: "core"
+
+    - stage: Build
+      env:
         - NODE_VERSION: "8"
         - VARIANT: "jessie"
 
@@ -159,6 +169,11 @@ jobs:
 
     - stage: Build
       env:
+        - NODE_VERSION: "8"
+        - VARIANT: "core"
+
+    - stage: Build
+      env:
         - NODE_VERSION: "9"
         - VARIANT: "jessie"
 
@@ -181,6 +196,11 @@ jobs:
       env:
         - NODE_VERSION: "9"
         - VARIANT: "stretch"
+
+    - stage: Build
+      env:
+        - NODE_VERSION: "9"
+        - VARIANT: "core"
 
     - stage: Build
       env:
